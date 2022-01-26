@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_splash"
+    android:background="@color/card_color"
     android:orientation="vertical"
     tools:context=".Main_Section.MainActivity">
 
@@ -14,7 +14,7 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/back_splash"
+        android:background="@color/card_color"
         android:orientation="vertical"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/icon_color" />
+            app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/amaranth"
             android:text="@string/popular_article"
-            android:textColor="@color/icon_color"
+            android:textColor="@color/white"
             android:textSize="25dp" />
 
     </LinearLayout>
@@ -69,6 +69,7 @@
             app:endIconTint="#4D090A"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
+            app:hintTextColor="@color/card_color"
             app:layout_constraintBottom_toTopOf="@+id/textView_pass"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.9"

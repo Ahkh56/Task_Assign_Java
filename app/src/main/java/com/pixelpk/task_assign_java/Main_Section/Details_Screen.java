@@ -17,7 +17,7 @@ public class Details_Screen extends AppCompatActivity
 
     TextView date,title,caption,url;
     String detail_str,img_str,title_str,date_str,url_str;
-    ImageView img_view;
+    ImageView img_view,back_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,6 +36,14 @@ public class Details_Screen extends AppCompatActivity
             {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url_str));
                 startActivity(browserIntent);
+            }
+        });
+
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+              finish();
             }
         });
 
@@ -69,5 +77,6 @@ public class Details_Screen extends AppCompatActivity
         caption = findViewById(R.id.caption_detail);
         url = findViewById(R.id.url_detail);
         img_view = findViewById(R.id.img_article);
+        back_btn = findViewById(R.id.back_btn);
     }
 }
